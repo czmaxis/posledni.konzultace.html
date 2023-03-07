@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>konzultace konec</title>
+</head>
+<script>
+function init(){
+
+}
+
+
+
+    function test(){
+
+    const result = [
+    {id : 1, name:'ABC' , value 123},
+    {id : 2, name:'xyz' , value 234},
+    {id : 3, name:'IJK' , value 45},
+    ]
+
+
+    result.forEach((item) => {
+
+    document.getElementById("item-id").value = item.id;
+      document.getElementById("item-name").value = item.name;
+        document.getElementById("item-value").value = item.value;
+        })
+    }
+</script>
+<body onload = "init()">
+<button onclick = "test()">TEST</button>
+
+<div id="resultBox">
+    ID:<textarea id="item-id"></textarea>
+    NAME: <textarea id="item-name"></textarea>
+    VALUE:<textarea id="item-value"></textarea>
+
+</div>
+</body>
+</html>
